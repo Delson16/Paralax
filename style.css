@@ -1,0 +1,73 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2b2b2b;
+}
+h1, h2{
+    font-weight: 800;
+    color: #000;
+    text-transform: uppercase;
+}
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+main{
+    display: block;
+    background: #fff;
+}
+.container{
+    width: 100%;
+    /* Delimita uma limitação de espaço com o qual a largura do elemento pode ocupar. Neste casso a largura ocupara 100 doespaço disponivel, mas caso este espaço ultrapasse 760px ele parará de ocupar espaço */
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+section.modulo p{
+    margin-bottom: 30px;
+    text-align: justify;
+    font-size: 1.3em;
+}
+section.modulo h2{
+    margin-bottom: 30px;
+    font-size: 30px;
+    letter-spacing: .5em;
+    text-align: center;
+}
+section.modulo.content{
+    padding: 40px 0px;
+    background: #a09f9f;
+}
+section.modulo.paralax{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    /* !important é utilizado para determinar uma prioridade, sendo assim um elemento que detenha esse atributo será prioridade em sua execução e nenhum outro elemento otrapalhará a sua execução */
+    height: 100vh !important;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section.modulo.paralax h1{
+    color: #fff;
+    text-shadow: 7px 7px 7px #00000085;
+    text-align: center;
+    font-size: 75px;
+    /* Eixo relativo a profundidade do elemento em questão e a base */
+    z-index: 100;
+}
+section.modulo.paralax-1{
+    background-image: url(https://images.unsplash.com/photo-1497515114629-f71d768fd07c?auto=format&fit=crop&q=80&w=1484&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+section.modulo.paralax-2{
+    background-image: url(https://cdn.pixabay.com/photo/2020/10/12/15/55/coffee-5649213_1280.jpg);
+}
+section.modulo.paralax-3{
+    background-image: url(https://images.unsplash.com/photo-1549903072-7e6e0bedb7fb?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
